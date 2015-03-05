@@ -10,7 +10,7 @@
 #   hubot tenki me     - Show the today's weather  in Japanese
 #   hubot yohou me     - Show weather forecasts in Japanese
 
-url = "http://weather.livedoor.com/forecast/webservice/json/v1?city=" + process.env.HUBOT_WEATHER_CITYCODE
+url = "http://weather.livedoor.com/forecast/webservice/json/v1?city=" + process.env.HUBOT_TENKI_CITYCODE
 
 module.exports = (robot) ->
   robot.respond /(tenki|yohou) me/i, (msg) ->
